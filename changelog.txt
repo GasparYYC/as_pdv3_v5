@@ -1,0 +1,38 @@
+-------------------------------------------------------------------------------
+** Date: 18-09-2014             Version:  0.3.5.03
+**   bugfix and impovement suggested by Giuseppe Polo
+**   +query2table               added Interline parameter
+**    setCellFont               bugfix for Header
+** Date: 26-09-2014             Version:  0.3.5.04
+**   bugfix for recursive call of function Write
+** Date: 29-09-2014             Version:  0.3.5.05
+**   +query2table               added pFrame parameter ex:  'L=2pt; C=FF0000'
+**                                       where L=Linesize and C=rgb hex colour
+**   +query2table               p_colors also accept CSV string of rgb colours   
+**   +set_Language              Set language for erorr messages.
+**                                       (English, Italian)
+**   +put_image                 add parameters p_cellWidth, p_cellheight
+**   +Columns                   can contain blob IMAGE 
+**   +FullJustify Alignment     for write and query2table functions
+**
+** Date: 25-11-2014             Version:  0.3.5.06
+**   bugfix for query with more than 200 records
+**   +query2table               Add optional parameter p_bulk_size:=200
+**   +cursor2table              if = 0 buffer is autodetected,
+**                              but query runs 2 times!
+** Date: 24-06-2015             Version:  0.3.5.07
+**   BugFix query2table         Reset rowHeith when
+**                              RowHeight Min or Exacat as specified
+** Date: 30-06-2015             Version:  0.3.5.08
+**   BugFix PrepareRecord       Fix problem with rowHeight
+** Date: 26-08-2015                    Version:  0.3.5.09
+**   BugFix colorTable                 Fix problem with undefined collection
+**   WARNING! if you change package name, propertly set g_package variabile
+** Date: 14-12-2015                    Version:  0.3.5.10
+**   Bugix in PrepareRecord
+** Date: 11-05-2016                    Version:  0.3.5.11
+**   Bugix error when calling with null colours
+**   colorTable changed and moved before query2Table
+**   query2table & query2label changed
+**   when calling query2table you must use empty string '' instead of null for p_colors parameter
+**
